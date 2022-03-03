@@ -13,6 +13,17 @@
  * 
 */
 
+const listElementsNavBar=[' Home ',' Section 1 ',' Section 2 ',' Section 3 '];
+const myNav=document.getElementById('navbar__list');
+
+for(listElement of listElementsNavBar){
+    mynewli=document.createElement('li')
+    mynewli.textContent=listElement;
+    mynewli.innerHTML=`<a href="#">  ${listElement}  </a>`;
+    myNav.appendChild(mynewli)
+    mynewli.className+="top-link";
+}
+
 /**
  * Comments should be present at the beginning of each procedure and class.
  * Great to have comments before crucial code sections within the procedure.

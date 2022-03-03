@@ -10,6 +10,20 @@
 
 
 /* ---- Base Rules ---- */
+a{
+    text-decoration: none;
+}
+.top-link{
+    border-radius: 3px;
+    border:2px solid lightskyblue;
+    background-color: azure;
+    color:#0a0a0a;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px;
+    margin : 2px;
+    font-size: 1rem;
+}
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
