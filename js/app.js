@@ -1,73 +1,58 @@
-/**
- * 
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- * 
- * Dependencies: None
- * 
- * JS Version: ES2015/ES6
- * 
- * JS Standard: ESlint
- * 
-*/
 
-const listElementsNavBar=[' Home ',' Section 1 ',' Section 2 ',' Section 3 '];
+
+const listElementsNavBar=['Home','Section1','Section2','Section3'];
 const myNav=document.getElementById('navbar__list');
-
-for(listElement of listElementsNavBar){
+var list_id=[]; //i need to use this id to perform action Eventlistener and making the function
+for(listElement of listElementsNavBar) //use loop to browse list 
+{
     mynewli=document.createElement('li')
-    mynewli.textContent=listElement;
-    mynewli.innerHTML=`<a href="#">  ${listElement}  </a>`;
+    mynewli.textContent=listElement; // add the textContent to a. Example <a href="">Section 1</a>
+    
+    mySectionId=`${listElement}`; //create de id of the a href element
+    list_id.push(mySectionId);
+    //console.log(mySectionId);
+    mynewli.innerHTML=`<a href="#" id="${mySectionId}">  ${listElement}  </a>`; //set NavBar element like link
     myNav.appendChild(mynewli)
-    mynewli.className+="top-link";
+    mynewli.className+="top-link active"; //set top-link class to a href link
+    
 }
-
-/**
- * Comments should be present at the beginning of each procedure and class.
- * Great to have comments before crucial code sections within the procedure.
-*/
-
-/**
- * Define Global Variables
- * 
-*/
+console.log(list_id);
 
 
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
+window.scroll({
+    top: 1000, 
+    left: 0, 
+    behavior: 'smooth'
+});
+window.scrollBy({ 
+    top: 250, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
+
+  //i need to get a new method to create function and note create 3 element
+
+  
+  //add actionEventListerner to section 1
 
 
+document.querySelector('#Section1').addEventListener('click',function(e){
+    console.log('click section 1');
+    e.preventDefault();
+    document.getElementById("section1").scrollIntoView();
+});
+  //add actionEventListerner to section 2
+document.querySelector('#Section2').addEventListener('click',function(e){
+    console.log('click section 2');
+    e.preventDefault();
+    document.getElementById("section2").scrollIntoView();
+});
+  //add actionEventListerner to section 3
+document.querySelector('#Section3').addEventListener('click',function(e){
+    console.log('click section 3');
+    e.preventDefault();
+    document.getElementById("section3").scrollIntoView();
+});
 
-/**
- * End Helper Functions
- * Begin Main Functions
- * 
-*/
-
-// build the nav
-
-
-// Add class 'active' to section when near top of viewport
-
-
-// Scroll to anchor ID using scrollTO event
-
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
 
 
