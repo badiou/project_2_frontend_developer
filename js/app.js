@@ -2,7 +2,7 @@
 
 const listElementsNavBar=['Home','Section1','Section2','Section3'];
 const myNav=document.getElementById('navbar__list');
-var list_id=[]; //i need to use this id to perform action Eventlistener and making the function
+var list_id=[]; //i need to use this id to perform action Eventlistener and making the function ........
 for(listElement of listElementsNavBar) //use loop to browse list 
 {
     mynewli=document.createElement('li')
@@ -30,12 +30,10 @@ window.scrollBy({
     behavior: 'smooth' 
   });
 
-  //i need to get a new method to create function and note create 3 element
-
+  //i need to get a new method and create function and note create 3 element
+  //But here i created 3 EventListener
   
   //add actionEventListerner to section 1
-
-
 document.querySelector('#Section1').addEventListener('click',function(e){
     console.log('click section 1');
     e.preventDefault();
