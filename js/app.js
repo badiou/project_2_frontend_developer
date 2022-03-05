@@ -1,8 +1,12 @@
 
+//add the scroll with javascript
 
-const listElementsNavBar=['Home','Section1','Section2','Section3'];
+mydocument=document.getElementById('my_html');
+mydocument.style.cssText+='scroll-behavior:smooth';
+//create the navbar dynamically with javascript
+const listElementsNavBar=['Home','Section1','Section2','Section3','Section4'];
 const myNav=document.getElementById('navbar__list');
-var list_id=[]; //i need to use this id to perform action Eventlistener and making the function ........
+let list_id=[]; //i need to use this id to perform action Eventlistener and making the function ........
 for(listElement of listElementsNavBar) //use loop to browse list 
 {
     mynewli=document.createElement('li')
@@ -51,6 +55,11 @@ document.querySelector('#Section3').addEventListener('click',function(e){
     e.preventDefault();
     document.getElementById("section3").scrollIntoView();
 });
-
+  //add actionEventListerner to section 4
+document.querySelector('#Section4').addEventListener('click',function(e){
+  console.log('click section 4');
+  e.preventDefault();
+  document.getElementById("section4").scrollIntoView();
+});
 
 

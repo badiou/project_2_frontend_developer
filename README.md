@@ -2,12 +2,17 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+This project called Landing page is the 2nd project of the Front-end Developer course. This project aims to allow us to demonstrate our skills in javascript.
+## Project structure:
+  .
+    ├── css                   
+        ├── style.css                   # css file to styling our index.html page
+    ├── js                   
+        ├── app.js                    # All javascprit code called in html with script tag
+    ├── index.html                   # HTML page
+    └── README.md
 
-## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+### app.ps
+    The app.js file contains the javascript code which dynamically create the navigation bar with 4 sections. After that, we added Event Listener on each "a" tag to perform navigation after click event. We added this CSS style in app.js.
