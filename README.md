@@ -1,6 +1,5 @@
 # Landing Page Project
 
-## Table of Contents
 
 This project called Landing page is the 2nd project of the Front-end Developer course. This project aims to allow us to demonstrate our skills in javascript.
 ## Project structure:
@@ -18,3 +17,6 @@ This project called Landing page is the 2nd project of the Front-end Developer c
     The app.js file contains the javascript code which dynamically create the navigation bar with 4 sections.
      After that, we added Event Listener on each "a" tag to perform navigation after click event. 
      We added this CSS style in app.js.
+
+### index.html
+    This file contains 4 sections. When the user click on navbar link, app.js catch the event and perform the scroll to the active section.
