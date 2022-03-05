@@ -42,24 +42,40 @@ document.querySelector('#Section1').addEventListener('click',function(e){
     console.log('click section 1');
     e.preventDefault();
     document.getElementById("section1").scrollIntoView();
+    document.getElementById("Section1").style.cssText+='border:3px solid blue';
+    document.getElementById("Section2").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section3").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section4").style.cssText+='border:2px solid lightskyblue';
 });
   //add actionEventListerner to section 2
 document.querySelector('#Section2').addEventListener('click',function(e){
     console.log('click section 2');
     e.preventDefault();
     document.getElementById("section2").scrollIntoView();
+    document.getElementById("Section1").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section2").style.cssText+='border:3px solid blue';
+    document.getElementById("Section3").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section4").style.cssText+='border:2px solid lightskyblue';
 });
   //add actionEventListerner to section 3
 document.querySelector('#Section3').addEventListener('click',function(e){
     console.log('click section 3');
     e.preventDefault();
     document.getElementById("section3").scrollIntoView();
+    document.getElementById("Section1").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section2").style.cssText+='border:2px solid lightskyblue';
+    document.getElementById("Section3").style.cssText+='border:3px solid blue';
+    document.getElementById("Section4").style.cssText+='border:2px solid lightskyblue';
 });
   //add actionEventListerner to section 4
 document.querySelector('#Section4').addEventListener('click',function(e){
   console.log('click section 4');
   e.preventDefault();
   document.getElementById("section4").scrollIntoView();
+  document.getElementById("Section1").style.cssText+='border:2px solid lightskyblue';
+  document.getElementById("Section2").style.cssText+='border:2px solid lightskyblue';
+  document.getElementById("Section3").style.cssText+='border:2px solid lightskyblue';
+  document.getElementById("Section4").style.cssText+='border:3px solid blue';
 });
 
 
