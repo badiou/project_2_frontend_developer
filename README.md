@@ -15,4 +15,6 @@ This project called Landing page is the 2nd project of the Front-end Developer c
 
 
 ### app.ps
-    The app.js file contains the javascript code which dynamically create the navigation bar with 4 sections. After that, we added Event Listener on each "a" tag to perform navigation after click event. We added this CSS style in app.js.
+    The app.js file contains the javascript code which dynamically create the navigation bar with 4 sections.
+     After that, we added Event Listener on each "a" tag to perform navigation after click event. 
+     We added this CSS style in app.js.
